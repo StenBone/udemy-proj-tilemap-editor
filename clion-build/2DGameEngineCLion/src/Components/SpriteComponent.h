@@ -1,7 +1,7 @@
 #ifndef SPRITECOMPONENT_H
 #define SPRITECOMPONENT_H
 
-#include <SDL2/SDL.h>
+#include "SDL.h"
 #include "../TextureManager.h"
 #include "../AssetManager.h"
 #include "../Animation.h"

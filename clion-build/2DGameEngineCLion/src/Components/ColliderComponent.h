@@ -3,7 +3,7 @@
 
 #define DEBUG_RENDER_COLLIDER false
 
-#include <SDL2/SDL.h>
+#include "SDL.h"
 #include "../TextureManager.h"
 #include "../AssetManager.h"
 #include "../Game.h"

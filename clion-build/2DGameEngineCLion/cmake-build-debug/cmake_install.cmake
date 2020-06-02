@@ -1,4 +1,4 @@
-# Install script for directory: /home/sten_bone/Downloads/clion-build/2DGameEngineCLion
+# Install script for directory: /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

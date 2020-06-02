@@ -5,7 +5,7 @@
 
 #include "../EntityManager.h"
 #include "../../lib/glm/glm.hpp"
-#include <SDL2/SDL.h>
+#include "SDL.h"
 #include "../Game.h"
 #include "../Constants.h"
 

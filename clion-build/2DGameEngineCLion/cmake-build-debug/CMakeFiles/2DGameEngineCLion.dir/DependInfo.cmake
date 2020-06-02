@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Animation.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Animation.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/AssetManager.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Collision.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Entity.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/EntityManager.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/FontManager.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Game.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Main.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Map.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Map.cpp.o"
-  "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/TextureManager.cpp" "/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/TextureManager.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Animation.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Animation.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/AssetManager.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Collision.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Entity.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/EntityManager.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/FontManager.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Game.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Main.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Map.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/Map.cpp.o"
+  "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/TextureManager.cpp" "/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir/src/TextureManager.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug"/>
+				<Option working_dir="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug"/>
+				<Option working_dir="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug"/>
+				<Option working_dir="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="2DGameEngineCLion">
-				<Option output="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/2DGameEngineCLion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug"/>
+				<Option output="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/2DGameEngineCLion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,15 +55,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 2DGameEngineCLion"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 2DGameEngineCLion"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="2DGameEngineCLion/fast">
-				<Option output="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/2DGameEngineCLion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug"/>
+				<Option output="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/2DGameEngineCLion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -79,89 +79,89 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 2DGameEngineCLion/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 2DGameEngineCLion/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Animation.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Animation.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Animation.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Animation.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/AssetManager.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/AssetManager.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/AssetManager.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/AssetManager.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Collision.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Collision.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Collision.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Collision.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Component.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Component.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Components">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Constants.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Constants.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Entity.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Entity.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Entity.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Entity.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/EntityManager.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/EntityManager.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/EntityManager.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/EntityManager.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/FontManager.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/FontManager.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/FontManager.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/FontManager.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Game.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Game.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Game.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Game.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Main.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Main.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Map.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Map.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/Map.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Map.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/TextureManager.cpp">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/TextureManager.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/src/TextureManager.h">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/TextureManager.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/CMakeLists.txt">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake/FindSDL2.cmake">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake/FindSDL2.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake/FindSDL2_image.cmake">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake/FindSDL2_image.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake/FindSDL2_ttf.cmake">
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake/FindSDL2_ttf.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
 	</Project>

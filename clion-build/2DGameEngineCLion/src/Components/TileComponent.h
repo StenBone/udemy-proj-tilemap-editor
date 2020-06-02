@@ -4,7 +4,7 @@
 #include "../Component.h"
 #include "../EntityManager.h"
 #include "../AssetManager.h"
-#include <SDL2/SDL.h>
+#include "SDL.h"
 #include "../../lib/glm/glm.hpp"
 
 class TileComponent : public Component {
