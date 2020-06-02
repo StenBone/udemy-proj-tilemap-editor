@@ -1,0 +1,3 @@
+/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sten_bone/Downloads/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles/2DGameEngineCLion.dir
