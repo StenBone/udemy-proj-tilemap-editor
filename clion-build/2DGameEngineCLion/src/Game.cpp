@@ -65,10 +65,10 @@ void Game::Initialize(int width, int height) {
 	}
 
 	// show colliders
-	assetManager->AddTexture("debug-image", std::string("./assets/images/collision-texture.png").c_str());
+	assetManager->AddTexture("debug-image", std::string("../assets/images/collision-texture.png").c_str());
 
 	LoadLevel(1);
-	manager.PrintEntitiesAndComponents();
+	//manager.PrintEntitiesAndComponents();
 
 
 	isRunning = true;
@@ -94,7 +94,7 @@ void Game::LoadLevel(int levelNumber) {
 	lua.open_libraries(sol::lib::base, sol::lib::os, sol::lib::math); //libraries available to the lua script
 
 	std::string levelName = "Level" + std::to_string(levelNumber);
-	lua.script_file("./assets/scripts/" + levelName + ".lua");
+	lua.script_file("../assets/scripts/" + levelName + ".lua");
 
     ///////////////////////////////////////////////////////////////////////////
     // LOAD LIST OF ASSETS FROM LUA CONFIG FILE

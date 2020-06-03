@@ -637,6 +637,10 @@ CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: /usr/include/SDL2/SDL_version.h
 CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: /usr/include/SDL2/SDL_video.h
 CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: /usr/include/SDL2/close_code.h
+CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: /usr/include/lua5.3/lauxlib.h
+CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: /usr/include/lua5.3/lua.h
+CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: /usr/include/lua5.3/luaconf.h
+CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: /usr/include/lua5.3/lualib.h
 
 CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o: ../lib/lua/lua.hpp
 CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o: ../lib/lua/sol.hpp

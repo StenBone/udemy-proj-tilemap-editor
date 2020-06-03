@@ -638,6 +638,10 @@ CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o
  /usr/include/SDL2/SDL_video.h
  /usr/include/SDL2/begin_code.h
  /usr/include/SDL2/close_code.h
+ /usr/include/lua5.3/lauxlib.h
+ /usr/include/lua5.3/lua.h
+ /usr/include/lua5.3/luaconf.h
+ /usr/include/lua5.3/lualib.h
 CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o
  /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/lib/lua/lua.hpp
  /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/lib/lua/sol.hpp
