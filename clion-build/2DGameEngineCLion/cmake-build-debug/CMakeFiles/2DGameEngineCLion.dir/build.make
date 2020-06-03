@@ -218,6 +218,8 @@ CMakeFiles/2DGameEngineCLion.dir/src/TextureManager.cpp.s: cmake_force
 2DGameEngineCLion: /usr/lib/x86_64-linux-gnu/libSDL2.so
 2DGameEngineCLion: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
 2DGameEngineCLion: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
+2DGameEngineCLion: /usr/lib/x86_64-linux-gnu/liblua5.3.so
+2DGameEngineCLion: /usr/lib/x86_64-linux-gnu/libm.so
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable 2DGameEngineCLion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/2DGameEngineCLion.dir/link.txt --verbose=$(VERBOSE)
