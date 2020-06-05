@@ -1,0 +1,10 @@
+Goal: Create a program that displays the available tiles in the tilemap and
+allows the user to place those tiles. The user can then export the map to a
+CSV file.
+
+(From the course)
+In your application, the user should be able to:
+   *Click and select a tile from the tile texture
+   *Use the mouse to draw/paint the map with the selected tile
+   *Select an option to save the .map file with a list of tile numbers that
+   were used to create the map
