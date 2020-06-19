@@ -2,6 +2,29 @@ Goal: Create a program that displays the available tiles in the tilemap and
 allows the user to place those tiles. The user can then export the map to a
 CSV file.
 
+*Currently In Face
+Frame Image Details:
+    800w x 128h
+    TileMap window starts @ 0, 32 and 321 x 96
+        ends @ 320, 128
+    Tile Selection starts @ 361, 56 and 40 x 38
+
+Jungle Image Details:
+    320w x 96h
+
+Measurements From Source:
+Window 800 x 736
+Tile Size 32 x 32
+4 Labels with 1 Title
+
+21, when reading a map means down 2 over 1
+
+Print frame at the bottom of the screen
+Print tilemap inside of frame
+Allow for the user to click select a tile from the tilemap
+
+Map creation will be done at runtime
+
 (From the course)
 In your application, the user should be able to:
    *Click and select a tile from the tile texture

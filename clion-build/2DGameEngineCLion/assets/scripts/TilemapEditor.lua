@@ -1,3 +1,5 @@
+local window_hieght = 600
+
 TilemapEditor = {
     ----------------------------------------------------
     -- Table to define the list of assets
@@ -20,20 +22,76 @@ TilemapEditor = {
             components = {
                 transform = {
                     position = {
-                        x = 720,
-                        y = 15
+                        x = 0,
+                        y = window_hieght - 128
                     },
                     velocity = {
                         x = 0,
                         y = 0
                     },
-                    width = 64,
-                    height = 64,
+                    width = 800,
+                    height = 128,
                     scale = 1,
                     rotation = 0
                 },
                 sprite = {
                     textureAssetId = "frame-texture",
+                    animated = false,
+                    frameCount = 0,
+                    animationSpeed = 0,
+                    hasDirections = false,
+                    fixed = true --important var
+                }
+            }
+        },
+        [1] = {
+            name = "tileSelector",
+            layer = 6,
+            components = {
+                transform = {
+                    position = {
+                        x = 0,
+                        y = window_hieght - 96
+                    },
+                    velocity = {
+                        x = 0,
+                        y = 0
+                    },
+                    width = 320,
+                    height = 96,
+                    scale = 1,
+                    rotation = 0
+                },
+                sprite = {
+                    textureAssetId = "terrain-texture-day",
+                    animated = false,
+                    frameCount = 0,
+                    animationSpeed = 0,
+                    hasDirections = false,
+                    fixed = true --important var
+                }
+            }
+        },
+        [2] = {
+            name = "tilePreview",
+            layer = 6,
+            components = {
+                transform = {
+                    position = {
+                        x = 361 + 4, --4 is an offset to center the image
+                        y = window_hieght - 128 + 56 + 3 --3 is an offset
+                    },
+                    velocity = {
+                        x = 0,
+                        y = 0
+                    },
+                    width = 32,
+                    height = 32,
+                    scale = 1,
+                    rotation = 0
+                },
+                sprite = {
+                    textureAssetId = "terrain-texture-day",
                     animated = false,
                     frameCount = 0,
                     animationSpeed = 0,

@@ -83,7 +83,14 @@ public:
 	}
 
 	void SetTexture(std::string assetTextureID) {
-		texture = Game::assetManager->GetTexture(assetTextureID);
+		texture = Application::assetManager->GetTexture(assetTextureID);
+	}
+
+	void SetSourceRectangle(int x, int y, int w, int h) {
+	    sourceRectangle.x = x;
+	    sourceRectangle.y = y;
+	    sourceRectangle.w = w;
+	    sourceRectangle.h = h;
 	}
 
 	void Initialize() override {
@@ -98,11 +105,11 @@ public:
 		if (isAnimated) {
 			// the rectangle is shifting over the sprite
 			sourceRectangle.x = sourceRectangle.w * static_cast<int>((SDL_GetTicks() / animationSpeed) % numFrames);
-		}
-		sourceRectangle.y = animationIndex * transform->height;
+            sourceRectangle.y = animationIndex * transform->height; // must be inside animation if
+        }
 
-		destinationRectangle.x = static_cast<int>(transform->position.x) - (isFixed ? 0 : Game::camera.x); //offset by camera position
-		destinationRectangle.y = static_cast<int>(transform->position.y) - (isFixed ? 0 : Game::camera.y); //offset by camera position
+		destinationRectangle.x = static_cast<int>(transform->position.x) - (isFixed ? 0 : Application::camera.x); //offset by camera position
+		destinationRectangle.y = static_cast<int>(transform->position.y) - (isFixed ? 0 : Application::camera.y); //offset by camera position
 		destinationRectangle.w = transform->width * transform->scale;
 		destinationRectangle.h = transform->height * transform->scale;
 	}

@@ -94,6 +94,12 @@
 		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Animation.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Application.cpp">
+			<Option target="2DGameEngineCLion"/>
+		</Unit>
+		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Application.h">
+			<Option target="2DGameEngineCLion"/>
+		</Unit>
 		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/AssetManager.cpp">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
@@ -131,12 +137,6 @@
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
 		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/FontManager.h">
-			<Option target="2DGameEngineCLion"/>
-		</Unit>
-		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Game.cpp">
-			<Option target="2DGameEngineCLion"/>
-		</Unit>
-		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Game.h">
 			<Option target="2DGameEngineCLion"/>
 		</Unit>
 		<Unit filename="/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Main.cpp">

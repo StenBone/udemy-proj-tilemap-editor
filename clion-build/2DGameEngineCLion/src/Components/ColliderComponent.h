@@ -6,7 +6,7 @@
 #include "SDL.h"
 #include "../TextureManager.h"
 #include "../AssetManager.h"
-#include "../Game.h"
+#include "../Application.h"
 #include "../EntityManager.h"
 #include "./TransformComponent.h"
 
@@ -43,8 +43,8 @@ public:
 		collider.w = transform->width * transform->scale; //todo scale should already be applied or a method which passes it already applied
 		collider.h = transform->height * transform->scale;
 	
-		destinationRectangle.x = collider.x - Game::camera.x;
-		destinationRectangle.y = collider.y - Game::camera.y;
+		destinationRectangle.x = collider.x - Application::camera.x;
+		destinationRectangle.y = collider.y - Application::camera.y;
 
 	}
 

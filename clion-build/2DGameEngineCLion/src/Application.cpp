@@ -1,6 +1,6 @@
 #include <iostream>
 #include "./Constants.h"
-#include "./Game.h"
+#include "./Application.h"
 #include "./AssetManager.h"
 #include "./Map.h"
 #include "./Components/TransformComponent.h"
@@ -12,26 +12,28 @@
 #include "../lib/glm/glm.hpp"
 
 EntityManager manager;
-AssetManager* Game::assetManager = new AssetManager(&manager);
-SDL_Renderer* Game::renderer;
-SDL_Event Game::event;
-SDL_Rect Game::camera = {0, 0, WINDOW_WIDTH, WINDOW_HEIGHT};
-Entity* mainPlayer = NULL;
+AssetManager* Application::assetManager = new AssetManager(&manager);
+SDL_Renderer* Application::renderer;
+SDL_Event Application::event;
+SDL_Rect Application::camera = {0, 0, WINDOW_WIDTH, WINDOW_HEIGHT};
 Map* map;
+TransformComponent* tileSelectorTransComp = NULL;
+SpriteComponent* tilePreviewSpriteComp = NULL;
 
-Game::Game() {
+
+Application::Application() {
 	this->isRunning = false;
 }
 
-Game::~Game() {
+Application::~Application() {
 
 }
 
-bool Game::IsRunning() const {
+bool Application::IsRunning() const {
 	return this->isRunning;
 }
 
-void Game::Initialize(int width, int height) {
+void Application::Initialize(int width, int height) {
 	if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
 		std::cerr << "Error initializing SDL." << std::endl;
 		return;
@@ -43,12 +45,12 @@ void Game::Initialize(int width, int height) {
 	}
 
 	window = SDL_CreateWindow(
-		NULL,
+		TITLE.c_str(),
 		SDL_WINDOWPOS_CENTERED,
 		SDL_WINDOWPOS_CENTERED,
 		width,
 		height,
-		SDL_WINDOW_BORDERLESS
+        SDL_WINDOW_SHOWN
 		);
 	// Just incase window didn't initialize correctly.
 	if (!window) {
@@ -89,11 +91,11 @@ void AddTransformCompToEntFromSol(sol::table transformComp, Entity* ent) {
     ent->AddComponent<TransformComponent>(posX, posY, velX, velY, width, height, scale);
 }
 
-void Game::LoadLevel(int levelNumber) {
+void Application::LoadLevel(int levelNumber) {
 	sol::state lua; //wrapper to lua state
 	lua.open_libraries(sol::lib::base, sol::lib::os, sol::lib::math); //libraries available to the lua script
 
-	std::string levelName = "Level" + std::to_string(levelNumber);
+	std::string levelName = "TilemapEditor";
 	lua.script_file("../assets/scripts/" + levelName + ".lua");
 
     ///////////////////////////////////////////////////////////////////////////
@@ -125,6 +127,8 @@ void Game::LoadLevel(int levelNumber) {
 		assetIndex++;
 	}
 
+
+    /**
     ///////////////////////////////////////////////////////////////////////////
     // LOAD MAP AND TILE INFORMATION FROM LUA CONFIG FILE
     ///////////////////////////////////////////////////////////////////////////
@@ -143,6 +147,7 @@ void Game::LoadLevel(int levelNumber) {
 		static_cast<int>(levelMap["mapSizeX"]),
 		static_cast<int>(levelMap["mapSizeY"])
 	);
+	*/
 
     ///////////////////////////////////////////////////////////////////////////
     // LOAD ENTITIES AND COMPONENTS FROM LUA CONFIG FILE
@@ -282,17 +287,20 @@ void Game::LoadLevel(int levelNumber) {
 					parentEntityHeight
 				);
 			}
-			// TODO TextLabelComponent
 		}
 		entityIndex++;
 	}
+    tileSelectorTransComp = manager.GetEntityByName("tileSelector")->GetComponent<TransformComponent>();
+    tilePreviewSpriteComp = manager.GetEntityByName("tilePreview")->GetComponent<SpriteComponent>();
 
-	mainPlayer = manager.GetEntityByName("player");
+    tilePreviewSpriteComp->SetSourceRectangle(64, 64, TILE_SIZE, TILE_SIZE);
+
 
     //manager.PrintEntitiesAndComponents();
 }
 
-void Game::ProcessInput() {
+void Application::ProcessInput() {
+    // todo wasd moves map around
 	SDL_PollEvent(&event);
 	switch(event.type) {
 		case SDL_QUIT: {
@@ -304,14 +312,61 @@ void Game::ProcessInput() {
 				isRunning = false;
 			}
 		}
+
+		case SDL_MOUSEBUTTONDOWN: {
+		    switch (event.button.button) {
+                case SDL_BUTTON_LEFT: {
+                    int x_coord = 0, y_coord = 0;
+                    SDL_GetMouseState(&x_coord, &y_coord);
+                    HandleLeftMouseButtonUp(x_coord, y_coord);
+                    break;
+                }
+            }
+		}
+
 		default: {
 			break;
 		}
 	}
 }
 
-// Game logic
-void Game::Update() {
+void Application::HandleLeftMouseButtonUp(int x, int y) {
+    // if x and y are over our tilemap image, print a message
+    // sub coords from tilemap position
+    // calculate source coords
+
+    int tileSelectorX = tileSelectorTransComp->position.x;
+    int tileSelectorW = tileSelectorTransComp->width + tileSelectorX;
+    int tileSelectorY = tileSelectorTransComp->position.y;
+    int tileSelectorH = tileSelectorTransComp->height + tileSelectorY;
+
+    // Is our click on top of the tileSelector box?
+    if (x >= tileSelectorX && x <= tileSelectorW &&
+        y >= tileSelectorY && y <= tileSelectorH) {
+        std::cout << "In box" << std::endl;
+
+        // Offset the x and y by the tile selector position
+        x = x - tileSelectorX;
+        y = y - tileSelectorY;
+
+        int snapX = x - x % TILE_SIZE;
+        int snapY = y - y % TILE_SIZE;
+
+        tilePreviewSpriteComp->SetSourceRectangle(snapX, snapY, TILE_SIZE, TILE_SIZE);
+    }
+
+    // Is our click in the tileComponent field?
+    // y value is on the edge of the frame
+    else if (x >= 0 && x <= WINDOW_WIDTH &&
+             y >= 0 && y < WINDOW_HEIGHT - 128) {
+
+    }
+
+}
+
+
+// Application logic
+void Application::Update() {
 
 	// Wait until 16ms has ellasped since the last frame
 	while (!SDL_TICKS_PASSED(SDL_GetTicks(), ticksLastFrame + FRAME_TARGET_TIME));
@@ -332,7 +387,7 @@ void Game::Update() {
 }
 
 
-void Game::Render() {
+void Application::Render() {
 	// Double buffer
 	// One gets displayed while one gets drawn
 	SDL_SetRenderDrawColor(renderer, 21, 21, 21, 255); // grey
@@ -347,7 +402,8 @@ void Game::Render() {
 	SDL_RenderPresent(renderer); // swap buffers
 }
 
-void Game::HandleCameraMovement() {
+void Application::HandleCameraMovement() {
+/**
 	//todo no transform component sanity check
 	if (mainPlayer) {
 		TransformComponent* mainPlayerTransform = mainPlayer->GetComponent<TransformComponent>();
@@ -360,9 +416,10 @@ void Game::HandleCameraMovement() {
 		camera.x = camera.x > camera.w ? camera.w : camera.x; // clamp x below camera.w(WINDOW_WIDTH)
 		camera.y = camera.y > camera.h ? camera.h : camera.y;
 	}
+ */
 }
 
-void Game::CheckCollisions() {
+void Application::CheckCollisions() {
 
 	CollisionType collisionType = manager.CheckCollisions();
 
@@ -371,9 +428,6 @@ void Game::CheckCollisions() {
 	}
 	if (collisionType == PLAYER_PROJECTILE_COLLISION) {
 		ProcessGameOver();
-	}
-	if (collisionType == PLAYER_LEVEL_COMPLETE_COLLISION) {
-		ProcessNextLevel(1);
 	}
 
 	/**
@@ -384,17 +438,12 @@ void Game::CheckCollisions() {
 	} */
 }
 
-void Game::ProcessNextLevel(int levelNumber) {
-	std::cout << "Next Level" << std::endl;
+void Application::ProcessGameOver() {
+	std::cout << "Application Over" << std::endl;
 	isRunning = false;
 }
 
-void Game::ProcessGameOver() {
-	std::cout << "Game Over" << std::endl;
-	isRunning = false;
-}
-
-void Game::Destroy() {
+void Application::Destroy() {
 	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);
 	SDL_Quit();

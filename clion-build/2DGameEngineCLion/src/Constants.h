@@ -3,11 +3,15 @@
 
 #include "SDL.h"
 
+const std::string TITLE = "Tilemap Editor";
+
 const unsigned int WINDOW_WIDTH = 800;
 const unsigned int WINDOW_HEIGHT = 600;
 
 const unsigned int FPS = 60;
 const unsigned int FRAME_TARGET_TIME = 1000 / FPS; // in milliseconds
+
+const unsigned int TILE_SIZE = 32;
 
 enum CollisionType {
 	NO_COLLISION,

@@ -1,5 +1,5 @@
 #include "./Map.h"
-#include "./Game.h"
+#include "./Application.h"
 #include "./EntityManager.h"
 #include "./Components/TileComponent.h"
 

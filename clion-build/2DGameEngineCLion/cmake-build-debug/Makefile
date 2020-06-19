@@ -150,6 +150,33 @@ src/Animation.cpp.s:
 	$(MAKE) -f CMakeFiles/2DGameEngineCLion.dir/build.make CMakeFiles/2DGameEngineCLion.dir/src/Animation.cpp.s
 .PHONY : src/Animation.cpp.s
 
+src/Application.o: src/Application.cpp.o
+
+.PHONY : src/Application.o
+
+# target to build an object file
+src/Application.cpp.o:
+	$(MAKE) -f CMakeFiles/2DGameEngineCLion.dir/build.make CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o
+.PHONY : src/Application.cpp.o
+
+src/Application.i: src/Application.cpp.i
+
+.PHONY : src/Application.i
+
+# target to preprocess a source file
+src/Application.cpp.i:
+	$(MAKE) -f CMakeFiles/2DGameEngineCLion.dir/build.make CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.i
+.PHONY : src/Application.cpp.i
+
+src/Application.s: src/Application.cpp.s
+
+.PHONY : src/Application.s
+
+# target to generate assembly for a file
+src/Application.cpp.s:
+	$(MAKE) -f CMakeFiles/2DGameEngineCLion.dir/build.make CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.s
+.PHONY : src/Application.cpp.s
+
 src/AssetManager.o: src/AssetManager.cpp.o
 
 .PHONY : src/AssetManager.o
@@ -285,33 +312,6 @@ src/FontManager.cpp.s:
 	$(MAKE) -f CMakeFiles/2DGameEngineCLion.dir/build.make CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.s
 .PHONY : src/FontManager.cpp.s
 
-src/Game.o: src/Game.cpp.o
-
-.PHONY : src/Game.o
-
-# target to build an object file
-src/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/2DGameEngineCLion.dir/build.make CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o
-.PHONY : src/Game.cpp.o
-
-src/Game.i: src/Game.cpp.i
-
-.PHONY : src/Game.i
-
-# target to preprocess a source file
-src/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/2DGameEngineCLion.dir/build.make CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.i
-.PHONY : src/Game.cpp.i
-
-src/Game.s: src/Game.cpp.s
-
-.PHONY : src/Game.s
-
-# target to generate assembly for a file
-src/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/2DGameEngineCLion.dir/build.make CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.s
-.PHONY : src/Game.cpp.s
-
 src/Main.o: src/Main.cpp.o
 
 .PHONY : src/Main.o
@@ -405,6 +405,9 @@ help:
 	@echo "... src/Animation.o"
 	@echo "... src/Animation.i"
 	@echo "... src/Animation.s"
+	@echo "... src/Application.o"
+	@echo "... src/Application.i"
+	@echo "... src/Application.s"
 	@echo "... src/AssetManager.o"
 	@echo "... src/AssetManager.i"
 	@echo "... src/AssetManager.s"
@@ -420,9 +423,6 @@ help:
 	@echo "... src/FontManager.o"
 	@echo "... src/FontManager.i"
 	@echo "... src/FontManager.s"
-	@echo "... src/Game.o"
-	@echo "... src/Game.i"
-	@echo "... src/Game.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"

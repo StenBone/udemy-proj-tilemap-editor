@@ -70,9 +70,22 @@ CMakeFiles/2DGameEngineCLion.dir/src/Animation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2DGameEngineCLion.dir/src/Animation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Animation.cpp -o CMakeFiles/2DGameEngineCLion.dir/src/Animation.cpp.s
 
+CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: CMakeFiles/2DGameEngineCLion.dir/flags.make
+CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o -c /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Application.cpp
+
+CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Application.cpp > CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.i
+
+CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Application.cpp -o CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.s
+
 CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o: CMakeFiles/2DGameEngineCLion.dir/flags.make
 CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o: ../src/AssetManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o -c /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/AssetManager.cpp
 
 CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.s: cmake_force
 
 CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o: CMakeFiles/2DGameEngineCLion.dir/flags.make
 CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o: ../src/Collision.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o -c /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Collision.cpp
 
 CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.s: cmake_force
 
 CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o: CMakeFiles/2DGameEngineCLion.dir/flags.make
 CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o: ../src/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o -c /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Entity.cpp
 
 CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.s: cmake_force
 
 CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o: CMakeFiles/2DGameEngineCLion.dir/flags.make
 CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o: ../src/EntityManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o -c /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/EntityManager.cpp
 
 CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.s: cmake_force
 
 CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o: CMakeFiles/2DGameEngineCLion.dir/flags.make
 CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o: ../src/FontManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o -c /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/FontManager.cpp
 
 CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.i: cmake_force
@@ -134,19 +147,6 @@ CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.i: cmake_force
 CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/FontManager.cpp -o CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.s
-
-CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: CMakeFiles/2DGameEngineCLion.dir/flags.make
-CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o -c /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Game.cpp
-
-CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Game.cpp > CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.i
-
-CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Game.cpp -o CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.s
 
 CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o: CMakeFiles/2DGameEngineCLion.dir/flags.make
 CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o: ../src/Main.cpp
@@ -190,12 +190,12 @@ CMakeFiles/2DGameEngineCLion.dir/src/TextureManager.cpp.s: cmake_force
 # Object files for target 2DGameEngineCLion
 2DGameEngineCLion_OBJECTS = \
 "CMakeFiles/2DGameEngineCLion.dir/src/Animation.cpp.o" \
+"CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o" \
 "CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o" \
 "CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o" \
 "CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o" \
 "CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o" \
 "CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o" \
-"CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o" \
 "CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o" \
 "CMakeFiles/2DGameEngineCLion.dir/src/Map.cpp.o" \
 "CMakeFiles/2DGameEngineCLion.dir/src/TextureManager.cpp.o"
@@ -204,12 +204,12 @@ CMakeFiles/2DGameEngineCLion.dir/src/TextureManager.cpp.s: cmake_force
 2DGameEngineCLion_EXTERNAL_OBJECTS =
 
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/Animation.cpp.o
+2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/AssetManager.cpp.o
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/Collision.cpp.o
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/Entity.cpp.o
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/EntityManager.cpp.o
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/FontManager.cpp.o
-2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/Game.cpp.o
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/Main.cpp.o
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/Map.cpp.o
 2DGameEngineCLion: CMakeFiles/2DGameEngineCLion.dir/src/TextureManager.cpp.o

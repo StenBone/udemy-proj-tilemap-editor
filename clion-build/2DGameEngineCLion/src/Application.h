@@ -11,13 +11,13 @@
 
 class AssetManager;
 
-class Game {
+class Application {
 	private:
 		bool isRunning;
 		SDL_Window *window;
 	public:
-		Game();
-		~Game(); //Destructor
+		Application();
+		~Application(); //Destructor
 		int ticksLastFrame = 0;
 		bool IsRunning() const; // Getter, const to ensure protection
 		static SDL_Renderer *renderer;
@@ -27,7 +27,7 @@ class Game {
 		void LoadLevel(int levelNumber);
 		void Initialize(int width, int height);
 		void ProcessInput();
-		void ProcessNextLevel(int levelNumber);
+        void HandleLeftMouseButtonUp(int x, int y);
 		void ProcessGameOver();
 		void Update();
 		void Render();

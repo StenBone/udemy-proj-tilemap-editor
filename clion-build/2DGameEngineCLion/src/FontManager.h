@@ -1,7 +1,7 @@
 #ifndef FONTMANAGER_H
 #define FONTMANAGER_H
 
-#include "./Game.h"
+#include "./Application.h"
 
 class FontManager {
 public:

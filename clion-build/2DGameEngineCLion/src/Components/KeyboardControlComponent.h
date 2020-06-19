@@ -1,7 +1,7 @@
 #ifndef KEYBOARDCONTROLCOMPONENT_H
 #define KEYBOARDCONTROLCOMPONENT_H
 
-#include "../Game.h"
+#include "../Application.h"
 #include "../EntityManager.h"
 #include "../Components/TransformComponent.h"
 #include "../Components/SpriteComponent.h"
@@ -45,8 +45,8 @@ public:
 	}
 
 	void Update(float deltaTime) override {
-		if (Game::event.type == SDL_KEYDOWN) {
-			std::string keyCode = std::to_string(Game::event.key.keysym.sym);
+		if (Application::event.type == SDL_KEYDOWN) {
+			std::string keyCode = std::to_string(Application::event.key.keysym.sym);
 			
 			if (keyCode.compare(upKey) == 0) {
 				transform->velocity.y = -25;
@@ -75,8 +75,8 @@ public:
 
 		}
 
-		if (Game::event.type == SDL_KEYUP) {
-			std::string keyCode = std::to_string(Game::event.key.keysym.sym);
+		if (Application::event.type == SDL_KEYUP) {
+			std::string keyCode = std::to_string(Application::event.key.keysym.sym);
 			
 			if (keyCode.compare(upKey) == 0) {
 				transform->velocity.y = 0;

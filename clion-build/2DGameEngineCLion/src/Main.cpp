@@ -1,9 +1,9 @@
 #include <iostream>
 #include "./Constants.h"
-#include "./Game.h"
+#include "./Application.h"
 
 int main(int argc, char *args[]) {
-	Game *game = new Game();
+	Application *game = new Application();
 
 	game->Initialize(WINDOW_WIDTH, WINDOW_HEIGHT);
 

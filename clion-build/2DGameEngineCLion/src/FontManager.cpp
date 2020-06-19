@@ -5,5 +5,5 @@ TTF_Font* FontManager::LoadFont(const char* fileName, int fontSize) {
 }
 
 void FontManager::Draw(SDL_Texture *texture, SDL_Rect position) {
-	SDL_RenderCopy(Game::renderer, texture, NULL, &position);
+	SDL_RenderCopy(Application::renderer, texture, NULL, &position);
 }

@@ -16,7 +16,7 @@ public:
 	glm::vec2 position;
 
 	TileComponent(int sourceRectangleX, int sourceRectangleY, int x, int y, int tileSize, int tileScale, std::string assetTextureId) {
-		texture = Game::assetManager->GetTexture(assetTextureId);
+		texture = Application::assetManager->GetTexture(assetTextureId);
 	
 		sourceRectangle.x = sourceRectangleX;
 		sourceRectangle.y = sourceRectangleY;
@@ -37,8 +37,8 @@ public:
 	}
 
 	void Update(float deltatime) override {
-		destinationRectangle.x = position.x - Game::camera.x;
-		destinationRectangle.y = position.y - Game::camera.y;
+		destinationRectangle.x = position.x - Application::camera.x;
+		destinationRectangle.y = position.y - Application::camera.y;
 	}
 
 	void Render() override {
