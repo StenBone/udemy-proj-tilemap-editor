@@ -1,4 +1,4 @@
-local window_hieght = 600
+local window_hieght = 736
 
 TilemapEditor = {
     ----------------------------------------------------

@@ -31,3 +31,5 @@ In your application, the user should be able to:
    *Use the mouse to draw/paint the map with the selected tile
    *Select an option to save the .map file with a list of tile numbers that
    were used to create the map
+
+Map data file is 19w x 24h
