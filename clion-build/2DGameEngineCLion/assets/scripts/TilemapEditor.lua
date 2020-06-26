@@ -1,4 +1,8 @@
 local window_hieght = 736
+local HINTS_START_X = 460
+local HINTS_FONT_SPACING = 15
+local HINTS_START_Y = window_hieght - (HINTS_FONT_SPACING * 5) --4 hints with a buffer at the bottom
+
 
 TilemapEditor = {
     ----------------------------------------------------
@@ -10,6 +14,7 @@ TilemapEditor = {
         [2] = { type="texture", id = "frame-texture", file = "../assets/images/hr.png" },
         [3] = { type="texture", id = "icon-texture", file = "../assets/images/icon.png" },
         [4] = { type="texture", id = "pointer-texture", file = "../assets/images/pointer.png" },
+        [5] = { type="font", id = "hermit-font", file = "../assets/fonts/Hermit-Bold.ttf", fontSize = 10 }
     },
 
     ----------------------------------------------------
@@ -97,6 +102,66 @@ TilemapEditor = {
                     animationSpeed = 0,
                     hasDirections = false,
                     fixed = true --important var
+                }
+            }
+        },
+        [3] = {
+            name = "hints-heading",
+            layer = 6,
+            components = {
+                textLabel = {
+                    x = HINTS_START_X,
+                    y = HINTS_START_Y - 25,
+                    text = "TILEMAP EDITOR",
+                    fontFamily = "hermit-font"
+                }
+            }
+        },
+        [4] = {
+            name = "hint-1",
+            layer = 6,
+            components = {
+                textLabel = {
+                    x = HINTS_START_X,
+                    y = HINTS_START_Y + (HINTS_FONT_SPACING * 0),
+                    text = "1. click one of the tiles to select",
+                    fontFamily = "hermit-font"
+                }
+            }
+        },
+        [5] = {
+            name = "hint-2",
+            layer = 6,
+            components = {
+                textLabel = {
+                    x = HINTS_START_X,
+                    y = HINTS_START_Y + (HINTS_FONT_SPACING * 1),
+                    text = "2. use the mouse to draw on the map",
+                    fontFamily = "hermit-font"
+                }
+            }
+        },
+        [6] = {
+            name = "hint-3",
+            layer = 6,
+            components = {
+                textLabel = {
+                    x = HINTS_START_X,
+                    y = HINTS_START_Y + (HINTS_FONT_SPACING * 2),
+                    text = "3. press \"w\" to write the map file",
+                    fontFamily = "hermit-font"
+                }
+            }
+        },
+        [7] = {
+            name = "hint-4",
+            layer = 6,
+            components = {
+                textLabel = {
+                    x = HINTS_START_X,
+                    y = HINTS_START_Y + (HINTS_FONT_SPACING * 3),
+                    text = "4. press \"q\" to quit the editor",
+                    fontFamily = "hermit-font"
                 }
             }
         }

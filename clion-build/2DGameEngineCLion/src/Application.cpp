@@ -174,6 +174,7 @@ void Application::LoadLevel(int levelNumber) {
 			sol::optional<sol::table> colliderCompExists = components["collider"];
 			sol::optional<sol::table> inputCompExists = components["input"]["keyboard"]; // for now only using keyboard
 			sol::optional<sol::table> projectileEmitterExits = components["projectileEmitter"];
+            sol::optional<sol::table> textLabelCompExists = components["textLabel"];
 
 			// TRANSFORM COMP
 			if (transformCompExists != sol::nullopt) {
@@ -287,6 +288,18 @@ void Application::LoadLevel(int levelNumber) {
 					parentEntityHeight
 				);
 			}
+
+			// TEXT LABEL COMP
+            if (textLabelCompExists != sol::nullopt) {
+                sol::table textLabelComp = components["textLabel"];
+                int x = textLabelComp["x"];
+                int y = textLabelComp["y"];
+                std::string text = textLabelComp["text"];
+                std::string fontFamily = textLabelComp["fontFamily"];
+
+                // 	TextLabelComponent(int x, int y, std::string text, std::string fontFamily, const SDL_Color& color) {
+                newEntity->AddComponent<TextLabelComponent>(x, y, text, fontFamily, WHITE_COLOR);
+            }
 		}
 		entityIndex++;
 	}
