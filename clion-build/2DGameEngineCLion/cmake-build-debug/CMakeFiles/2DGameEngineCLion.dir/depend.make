@@ -164,6 +164,7 @@ CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Components/Keyboa
 CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Components/ProjectileEmitterComponent.h
 CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Components/SpriteComponent.h
 CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Components/TextLabelComponent.h
+CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Components/TileComponent.h
 CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Components/TransformComponent.h
 CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Constants.h
 CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o: ../src/Entity.h

@@ -86,6 +86,10 @@ public:
 		texture = Application::assetManager->GetTexture(assetTextureID);
 	}
 
+	SDL_Rect GetSourceRectangle() {
+	    return sourceRectangle;
+	}
+
 	void SetSourceRectangle(int x, int y, int w, int h) {
 	    sourceRectangle.x = x;
 	    sourceRectangle.y = y;

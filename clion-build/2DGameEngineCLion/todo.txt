@@ -34,4 +34,6 @@ In your application, the user should be able to:
 
 Map data file is 19w x 24h
 
-todo next render the text labels
+figure out how to change orientation of map. It is being saved sideways.
+
+fu_to_do clang tidy project

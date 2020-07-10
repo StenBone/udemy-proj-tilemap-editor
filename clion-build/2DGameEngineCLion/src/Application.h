@@ -35,6 +35,7 @@ class Application {
 		void HandleCameraMovement();
 		void CheckCollisions();
 
+    void HandleLeftMouseButtonDown(int x, int y);
 };
 
 #endif 

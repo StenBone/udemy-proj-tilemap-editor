@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "./Constants.h"
 #include "./Application.h"
 #include "./AssetManager.h"
@@ -10,6 +11,7 @@
 #include "./Components/TextLabelComponent.h"
 #include "./Components/ProjectileEmitterComponent.h"
 #include "../lib/glm/glm.hpp"
+#include "Components/TileComponent.h"
 
 EntityManager manager;
 AssetManager* Application::assetManager = new AssetManager(&manager);
@@ -19,7 +21,13 @@ SDL_Rect Application::camera = {0, 0, WINDOW_WIDTH, WINDOW_HEIGHT};
 Map* map;
 TransformComponent* tileSelectorTransComp = NULL;
 SpriteComponent* tilePreviewSpriteComp = NULL;
+bool left_mouse_button_down = false;
 
+struct Point2d {
+    int x = -1, y = -1;
+};
+
+Entity* matrix[MATRIX_W][MATRIX_H]; // matrix to store map
 
 Application::Application() {
 	this->isRunning = false;
@@ -306,9 +314,6 @@ void Application::LoadLevel(int levelNumber) {
     tileSelectorTransComp = manager.GetEntityByName("tileSelector")->GetComponent<TransformComponent>();
     tilePreviewSpriteComp = manager.GetEntityByName("tilePreview")->GetComponent<SpriteComponent>();
 
-    tilePreviewSpriteComp->SetSourceRectangle(64, 64, TILE_SIZE, TILE_SIZE);
-
-
     //manager.PrintEntitiesAndComponents();
 }
 
@@ -320,27 +325,116 @@ void Application::ProcessInput() {
 			isRunning = false;
 			break;
 		}
+
 		case SDL_KEYDOWN: {
-			if (event.key.keysym.sym == SDLK_ESCAPE) {
+			if (event.key.keysym.sym == SDLK_ESCAPE || event.key.keysym.sym == SDLK_q) {
 				isRunning = false;
 			}
+			if (event.key.keysym.sym == SDLK_w) {
+			    // write out a file with the information fromfrom matrix
+			    // 00,00,
+			    // saved_example.map
+                std::ofstream myfile ("saved.map");
+                if (myfile.is_open())
+                {
+                    for (int row = 0; row < MATRIX_H; row++) {
+                        for (int col = 0; col < MATRIX_W; col++) {
+                            Entity* ent = matrix[col][row];
+                            if (ent != NULL)
+                            {
+                                std::string ent_name = ent->name;
+                                std::string written_value = ent_name.substr(ent_name.find_first_of(':', 0) + 1, ent_name.length());
+                                myfile << written_value;
+                            } else{
+                                myfile << "00";
+                            }
+
+                            if (col < MATRIX_W - 1) {
+                                myfile << ",";
+                            }
+
+
+                        }
+                        myfile << std::endl;
+                    }
+                }
+                else std::cout << "Unable to open file";
+			}
+            break;
 		}
 
 		case SDL_MOUSEBUTTONDOWN: {
+
+            switch (event.button.button) {
+                case SDL_BUTTON_LEFT: {
+                    left_mouse_button_down = true;
+                    break;
+                }
+            }
+            break;
+		}
+
+		case SDL_MOUSEBUTTONUP: {
 		    switch (event.button.button) {
                 case SDL_BUTTON_LEFT: {
+                    left_mouse_button_down = false;
                     int x_coord = 0, y_coord = 0;
                     SDL_GetMouseState(&x_coord, &y_coord);
                     HandleLeftMouseButtonUp(x_coord, y_coord);
                     break;
                 }
             }
+            break;
 		}
 
 		default: {
 			break;
 		}
 	}
+}
+
+void Application::HandleLeftMouseButtonDown(int x, int y) {
+
+    // Is our click in the tileComponent field?
+    // y value is on the edge of the frame
+    if (x >= 0 && x <= MAP_PREVIEW_WIDTH &&
+             y >= 0 && y < MAP_PREVIEW_HEIGHT) {
+
+        // where to draw tileComp
+        // snap to width of map preview
+        // snap to height of map preview
+        int snapX = x - x % TILE_SIZE;
+        int snapY = y - y % TILE_SIZE;
+
+        // matrix coordinates
+        int mat_x = x / TILE_SIZE;
+        int mat_y = y / TILE_SIZE;
+
+
+        SDL_Rect srcRect = tilePreviewSpriteComp->GetSourceRectangle();
+        // The ent_name is almost like a unique key.
+        // The x and y are there because 11col0 could be translated x = 1 y = 10 or x = 11 y = 0
+        std::string ent_name = "x" + std::to_string(mat_x) + "y" + std::to_string(mat_y) + ":" + std::to_string(srcRect.y / TILE_SIZE) + std::to_string(srcRect.x / TILE_SIZE);
+
+        Entity* ent_at_mat = matrix[mat_x][mat_y];
+        std::string name_from_mat = "";
+
+        if (ent_at_mat != NULL)
+        {
+            name_from_mat = ent_at_mat->name;
+
+            // does the selected tile already have the same tile?
+            if (ent_name.compare(name_from_mat) == 0)
+            {
+                manager.DeleteEntityByName(ent_name);
+            }
+        }
+
+        // draw a tile on the screen
+        Entity& newTile(manager.AddEntity(ent_name, TILEMAP_LAYER));
+        matrix[mat_x][mat_y] = &newTile; // returns pointer to what the ref is aliasing
+        newTile.AddComponent<TileComponent>(srcRect.x, srcRect.y, snapX, snapY, TILE_SIZE, 1, "terrain-texture-day");
+    }
 }
 
 void Application::HandleLeftMouseButtonUp(int x, int y) {
@@ -368,12 +462,6 @@ void Application::HandleLeftMouseButtonUp(int x, int y) {
         tilePreviewSpriteComp->SetSourceRectangle(snapX, snapY, TILE_SIZE, TILE_SIZE);
     }
 
-    // Is our click in the tileComponent field?
-    // y value is on the edge of the frame
-    else if (x >= 0 && x <= WINDOW_WIDTH &&
-             y >= 0 && y < WINDOW_HEIGHT - 128) {
-
-    }
 
 }
 
@@ -397,6 +485,14 @@ void Application::Update() {
 
 	HandleCameraMovement(); 
 	CheckCollisions();
+
+
+    if (left_mouse_button_down == true) {
+        int x_coord = 0, y_coord = 0;
+        SDL_GetMouseState(&x_coord, &y_coord);
+        HandleLeftMouseButtonDown(x_coord, y_coord);
+    }
+
 }
 
 

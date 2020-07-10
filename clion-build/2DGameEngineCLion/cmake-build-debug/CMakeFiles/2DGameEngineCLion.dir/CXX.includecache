@@ -1093,6 +1093,8 @@ boost/unordered_map.hpp
 /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Application.cpp
 iostream
 -
+fstream
+-
 ./Constants.h
 /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Constants.h
 ./Application.h
@@ -1115,6 +1117,8 @@ iostream
 /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/ProjectileEmitterComponent.h
 ../lib/glm/glm.hpp
 /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/lib/glm/glm.hpp
+Components/TileComponent.h
+/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/TileComponent.h
 
 /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Application.h
 SDL.h
@@ -1205,6 +1209,18 @@ SDL_ttf.h
 /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/AssetManager.h
 ../Application.h
 /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Application.h
+
+/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/TileComponent.h
+../Component.h
+/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Component.h
+../EntityManager.h
+/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/EntityManager.h
+../AssetManager.h
+/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/AssetManager.h
+SDL.h
+/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/SDL.h
+../../lib/glm/glm.hpp
+/home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/lib/glm/glm.hpp
 
 /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/TransformComponent.h
 ../EntityManager.h

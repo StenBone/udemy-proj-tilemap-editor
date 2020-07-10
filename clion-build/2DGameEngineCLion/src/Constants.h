@@ -8,10 +8,18 @@ const std::string TITLE = "Tilemap Editor";
 const unsigned int WINDOW_WIDTH = 800;
 const unsigned int WINDOW_HEIGHT = 736;
 
+// should be 800 x 608 starting at 0, 0
+// 25 x 19 tiles at 32 tilesize
+const unsigned int MAP_PREVIEW_WIDTH = WINDOW_WIDTH;
+const unsigned int MAP_PREVIEW_HEIGHT = WINDOW_HEIGHT - 128;
+
 const unsigned int FPS = 60;
 const unsigned int FRAME_TARGET_TIME = 1000 / FPS; // in milliseconds
 
 const unsigned int TILE_SIZE = 32;
+
+const unsigned short MATRIX_W = 25;
+const unsigned short MATRIX_H = 19;
 
 enum CollisionType {
 	NO_COLLISION,

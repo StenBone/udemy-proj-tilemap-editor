@@ -165,6 +165,7 @@ CMakeFiles/2DGameEngineCLion.dir/src/Application.cpp.o
  /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/ProjectileEmitterComponent.h
  /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/SpriteComponent.h
  /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/TextLabelComponent.h
+ /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/TileComponent.h
  /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Components/TransformComponent.h
  /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Constants.h
  /home/sten_bone/repos/udemy-proj-tilemap-editor/clion-build/2DGameEngineCLion/src/Entity.h

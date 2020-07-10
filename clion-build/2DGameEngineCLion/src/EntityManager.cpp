@@ -154,6 +154,21 @@ Entity& EntityManager::AddEntity(std::string entityName, LayerType layer) {
 	return *entity;
 }
 
+bool EntityManager::DeleteEntityByName(std::string name) {
+
+    std::vector<Entity*>::iterator it = entities.begin();
+    for (it = entities.begin(); it != entities.end(); it++) {
+
+        if ((*it)->name.compare(name) == 0) {
+            entities.erase(it);
+            return true;
+        }
+    }
+
+    std::cerr << "No entity found" << std::endl;
+    return false;
+}
+
 /** OBSOLETE
 std::string EntityManager::CheckEntityCollisions(Entity& myEntity) const {
 	ColliderComponent* myCollider = myEntity.GetComponent<ColliderComponent>();
